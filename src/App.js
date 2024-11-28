@@ -19,7 +19,7 @@ const App = () => {
       <Plans />
 
       {/* About section providing information about the service */}
-      <divbout />
+      <About />
 
       {/* Footer section for additional information or links */}
       <Footer />
