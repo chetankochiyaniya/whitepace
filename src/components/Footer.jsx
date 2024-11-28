@@ -31,9 +31,9 @@ function Footer() {
                     <div className="col-sm-6 col-lg-2 mt-4 mt-lg-0">
                         <h5>Product</h5>
                         <ul className="nav flex-column ctm-footer-quick-links">
-                            <li><a> Overview</a></li>
-                            <li><a> Pricing</a></li>
-                            <li><a> Customer stories</a></li>
+                            <li><div> Overview</div></li>
+                            <li><div> Pricing</div></li>
+                            <li><div> Customer stories</div></li>
                         </ul>
                     </div>
 
@@ -41,9 +41,9 @@ function Footer() {
                     <div className="col-sm-6 col-lg-2 mt-4 mt-lg-0">
                         <h5>Resources</h5>
                         <ul className="nav flex-column ctm-footer-quick-links">
-                            <li><a> Blog</a></li>
-                            <li><a> Guides & tutorials</a></li>
-                            <li><a> Help center</a></li>
+                            <li><div> Blog</div></li>
+                            <li><div> Guides & tutorials</div></li>
+                            <li><div> Help center</div></li>
                         </ul>
                     </div>
 
@@ -51,9 +51,9 @@ function Footer() {
                     <div className="col-sm-6 col-lg-2 mt-4 mt-lg-0">
                         <h5>Company</h5>
                         <ul className="nav flex-column ctm-footer-quick-links">
-                            <li><a> About us</a></li>
-                            <li><a> Careers</a></li>
-                            <li><a> Media kit</a></li>
+                            <li><div> About us</div></li>
+                            <li><div> Careers</div></li>
+                            <li><div> Media kit</div></li>
                         </ul>
                     </div>
 
@@ -79,21 +79,21 @@ function Footer() {
                         <ul className="ctm-footer-nav nav">
                             <li className="nav-item">
                                 {/* Language selection with globe icon */}
-                                <a className="nav-link">
+                                <div className="nav-link">
                                     <img src={GlobeIcon} height={18} alt="GlobeIcon" />  English <i className="fa fa-angle-down"></i>
-                                </a>
+                                </div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link">Terms & Privacy</a>
+                                <div className="nav-link">Terms & Privacy</div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link">Security</a>
+                                <div className="nav-link">Security</div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link">Status</a>
+                                <div className="nav-link">Status</div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link">&copy;2021 Whitepace LLC.</a>
+                                <div className="nav-link">&copy;2021 Whitepace LLC.</div>
                             </li>
                         </ul>
                     </div>
@@ -103,21 +103,21 @@ function Footer() {
                         <ul className="ctm-footer-nav nav justify-content-center justify-content-md-end mt-1">
                             <li className="nav-item">
                                 {/* Facebook icon */}
-                                <a className="nav-link">
+                                <div className="nav-link">
                                     <img src={FacebookIcon} height={18} alt="FaceBook" />
-                                </a>
+                                </div>
                             </li>
                             <li className="nav-item">
                                 {/* Twitter icon */}
-                                <a className="nav-link">
+                                <div className="nav-link">
                                     <img src={TwitterIcon} height={18} alt="Twitter" />
-                                </a>
+                                </div>
                             </li>
                             <li className="nav-item">
                                 {/* LinkedIn icon */}
-                                <a className="nav-link">
+                                <div className="nav-link">
                                     <img src={LinkedinIcon} height={18} alt="Linkdin" />
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>

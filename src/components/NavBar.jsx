@@ -10,13 +10,13 @@ function NavBar() {
                 <nav className="navbar navbar-expand-xl py-3">
                     <div className="container">
                         {/* Brand logo, linking to the homepage */}
-                        <a className="navbar-brand" >
+                        <div className="navbar-brand" >
                             <img
                                 src={logo}
                                 alt="Whitepace Logo" // Alternative text for the logo
                                 className="d-inline-block align-top me-2" // Bootstrap classes for alignment
                             />
-                        </a>
+                        </div>
 
                         {/* Button to toggle the navigation menu on mobile */}
                         <button
@@ -40,27 +40,27 @@ function NavBar() {
                             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
                                 {/* Dropdown menu for Products */}
                                 <li className="nav-item dropdown">
-                                    <a className="nav-link active" >
+                                    <div className="nav-link active" >
                                         Products <i className="fa fa-angle-down"></i>
-                                    </a>
+                                    </div>
                                 </li>
                                 {/* Menu item for Solutions */}
                                 <li className="nav-item">
-                                    <a className="nav-link" >
+                                    <div className="nav-link" >
                                         Solutions <i className="fa fa-angle-down"></i>
-                                    </a>
+                                    </div>
                                 </li>
                                 {/* Menu item for Resources */}
                                 <li className="nav-item">
-                                    <a className="nav-link" >
+                                    <div className="nav-link" >
                                         Resources <i className="fa fa-angle-down"></i>
-                                    </a>
+                                    </div>
                                 </li>
                                 {/* Menu item for Pricing */}
                                 <li className="nav-item">
-                                    <a className="nav-link" >
+                                    <div className="nav-link" >
                                         Pricing <i className="fa fa-angle-down"></i>
-                                    </a>
+                                    </div>
                                 </li>
                             </ul>
 
