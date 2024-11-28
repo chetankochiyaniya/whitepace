@@ -1,0 +1,162 @@
+/* Bootstrap variables */
+:root {
+    --bs-body-color: #252d39;
+    --bs-body-bg: rgb(255, 255, 255);
+    --bs-primary-rgb: 79, 156, 249;
+}
+
+/* Frontend variables */
+:root {
+    --ctm-theme-color: rgb(79, 156, 249);
+    --ctm-theme-color-rgb: 79, 156, 249;
+    --ctm-item-bg: #FFFFFF;
+    --ctm-item-shadow: none;
+    --ctm-item-active-bg: #043873;
+    --ctm-item-active-color: #fff;
+    --ctm-orange: #FFE492;
+}
+
+.ctm-plans {
+    background-color: var(--bs-body-bg);
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+@media (min-width: 768px) {
+    .ctm-plans {
+        padding: 100px 0;
+    }
+}
+
+.ctm-plans-heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+}
+
+@media (min-width: 768px) {
+    .ctm-plans-heading {
+        font-size: 45px;
+        line-height: 45px;
+    }
+}
+
+.ctm-plans-sub-heading {
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--bs-body-color);
+}
+
+.ctm-plans-item {
+    background-color: var(--ctm-item-bg);
+    border-radius: 15px;
+    box-shadow: var(--ctm-item-shadow);
+    transition: transform 0.25s ease-in-out;
+}
+
+.ctm-plans-item.active {
+    background-color: var(--ctm-item-active-bg);
+}
+
+.ctm-plans-price,
+.ezy-pricing1-features,
+.ctm-plans-note,
+.ctm-plans-title {
+    color: var(--bs-body-color);
+}
+
+.ctm-plans-item.active .ctm-plans-price,
+.ctm-plans-item.active .ezy-pricing1-features,
+.ctm-plans-item.active .ctm-plans-note,
+.ctm-plans-item.active .ctm-plans-title {
+    color: var(--ctm-item-active-color);
+}
+
+.ctm-plans .btn-outline-primary {
+    background-color: transparent;
+    color: var(--ctm-orange) !important;
+    border: 2px solid var(--ctm-orange);
+}
+
+.ctm-plans-btn {
+    padding: 12px 30px;
+    background-color: var(--ctm-theme-color);
+    border-color: var(--ctm-theme-color);
+}
+
+.ctm-plans-btn.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--ctm-orange);
+}
+
+.ctm-plans-btn:hover {
+    color: #fff;
+    background-color: rgba(var(--ctm-theme-color-rgb), 0.9);
+    border-color: rgba(var(--ctm-theme-color-rgb), 0.9);
+}
+
+.ctm-plans-btn.btn-outline:hover {
+    opacity: 0.8;
+}
+
+.ctm-plans-item:not(.active) .ctm-plans-btn {
+    border-color: var(--ctm-orange);
+}
+
+.ctm-plans-item.active .ctm-plans-btn {
+    background-color: var(--ctm-theme-color);
+    border-color: var(--ctm-theme-color);
+}
+
+.ctm-plans .text-primary {
+    color: var(--ctm-theme-color) !important;
+}
+
+.ctm-text {
+    color: #FFE492
+}
+
+.ctm-border {
+    border: #FFE492 2px solid;
+}
+
+
+.ctm-plans-heading-wrapper {
+    position: relative;
+    /* Set this to relative to position the SVG relative to the heading */
+    display: inline-block;
+    /* Make the wrapper fit the content */
+}
+
+.ctm-plans-heading {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--bs-body-color);
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .ctm-plans-heading {
+        font-size: 45px;
+        line-height: 45px;
+    }
+}
+
+.ctm-plans-svg {
+    position: absolute;
+    bottom: 0;
+    /* Adjust the positioning of the SVG */
+    right: 0px;
+    /* Adjust this value to move the SVG to the right or left */
+    width: 80px;
+    /* Adjust the size of the SVG */
+}
+
+@media (min-width: 768px) {
+    .ctm-plans-svg {
+        width: 160px;
+        /* Adjust the size for larger screens */
+    }
+}

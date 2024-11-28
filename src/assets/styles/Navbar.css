@@ -1,0 +1,124 @@
+.ctm-nav {
+    /* Bootstrap variables */
+    --bs-body-color: #fff;
+    --bs-body-bg: #043873;
+
+    /* Frontend variables */
+    --ctm-theme-color: rgb(13, 110, 253);
+    --ctm-theme-color-rgb: 13, 110, 253;
+
+    background-color: var(--bs-body-bg);
+}
+
+
+.ctm-nav .navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+}
+
+.ctm-nav .navbar-toggler>span {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.ctm-nav .navbar-toggler>span>span {
+    position: relative;
+}
+
+.ctm-nav .navbar-toggler>span>span,
+.ctm-nav .navbar-toggler>span>span::before,
+.ctm-nav .navbar-toggler>span>span::after {
+    height: 2px;
+    background-color: var(--bs-body-color);
+    width: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all .35s ease-in-out;
+}
+
+.ctm-nav .navbar-toggler>span>span::before,
+.ctm-nav .navbar-toggler>span>span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.ctm-nav .navbar-toggler[aria-expanded="false"]>span>span::before {
+    top: 7px;
+}
+
+.ctm-nav .navbar-toggler[aria-expanded="false"]>span>span::after {
+    bottom: 7px;
+}
+
+.ctm-nav .navbar-toggler[aria-expanded="true"]>span>span {
+    background-color: transparent;
+}
+
+.ctm-nav .navbar-toggler[aria-expanded="true"]>span>span::before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.ctm-nav .navbar-toggler[aria-expanded="true"]>span>span::after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+.ctm-nav .navbar-nav .nav-link {
+    color: var(--bs-body-color);
+    opacity: 1;
+}
+
+.ctm-nav .navbar-nav .nav-link:hover,
+.ctm-nav .navbar-nav .nav-link:focus,
+.ctm-nav .navbar-nav .nav-link.active {
+    color: var(--bs-body-color);
+    opacity: 1;
+}
+
+@media (min-width: 992px) {
+    .ctm-nav .navbar-nav .nav-link {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+/* Dropdown Arrow */
+.nav-item .fa-angle-down {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Login Button */
+.btn-login {
+    background-color: #FFE492;
+    color: black;
+    border-color: #FFE492;
+}
+
+.btn-login:hover {
+    background-color: rgba(255, 228, 146, 0.9);
+    border-color: rgba(255, 228, 146, 0.9);
+}
+
+/* Try Button */
+.btn-try {
+    background-color: #4F9CF9;
+    color: white;
+    border-color: #4F9CF9;
+    display: flex;
+    align-items: center;
+}
+
+.btn-try:hover {
+    background-color: #4F9CF9;
+    border-color: #4F9CF9;
+    color: white;
+    opacity: 0.9;
+}
+
+.btn-try i {
+    margin-left: 8px;
+}

@@ -1,0 +1,79 @@
+.ctm-footer {
+    /* Bootstrap variables */
+    --bs-body-color: #fff;
+    --bs-body-bg: #043873;
+
+    /*Frontend variables */
+    --ctm-theme-color: rgb(13, 110, 253);
+    --ctm-theme-color-rgb: 13, 110, 253;
+    --ctm-card-bg: rgb(255, 255, 255);
+    --ctm-card-box-shadow: 0px 6px 44px rgba(173, 174, 197, 0.2);
+    --ctm-divider-bg: #989898;
+
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    padding: 60px 0 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .ctm-footer {
+        padding: 80px 0 20px 0;
+    }
+}
+
+.ctm-footer-nav .nav-link {
+    color: var(--bs-body-color);
+}
+
+.ctm-footer-nav .nav-link:hover {
+    color: var(--bs-body-color);
+    opacity: 1;
+}
+
+.ctm-footer-quick-links li {
+    margin-bottom: 8px;
+}
+
+.ctm-footer-quick-links li a {
+    color: var(--bs-body-color);
+    opacity: 1;
+    text-decoration: none;
+}
+
+.ctm-footer-quick-links li a:hover {
+    color: var(--bs-body-color);
+    opacity: 1;
+}
+
+.ctm-footer-nav li:hover {
+    opacity: 1 !important;
+}
+
+.ctm-footer hr {
+    background-color: var(--ctm-divider-bg);
+}
+
+/* Try Button */
+.btn-try {
+    background-color: #4F9CF9;
+    color: white;
+    border-color: #4F9CF9;
+    display: flex;
+    align-items: center;
+}
+
+.btn-try:hover {
+    background-color: #4F9CF9;
+    border-color: #4F9CF9;
+    color: white;
+    opacity: 0.9;
+}
+
+.btn-try i {
+    margin-left: 8px;
+}

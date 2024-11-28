@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// Importing components for navigation, header, footer, about section, and plans section
+import NavBar from './components/NavBar';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/About';
+import Plans from './components/Plans';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* Navigation bar for easy access to different sections */}
+      <NavBar />
+
+      {/* Header section of the page */}
+      <Header />
+
+      {/* Plans section where pricing or available plans are displayed */}
+      <Plans />
+
+      {/* About section providing information about the service */}
+      <About />
+
+      {/* Footer section for additional information or links */}
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;

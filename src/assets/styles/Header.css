@@ -1,0 +1,103 @@
+.ctm-header {
+    /* Bootstrap variables */
+    --bs-body-bg: #043873;
+
+    /* Frontend variables */
+    --ctm-theme-color: rgb(13, 110, 253);
+    --ctm-theme-color-rgb: 13, 110, 253;
+    --ctm-svg-bg: rgb(255, 255, 255);
+
+    background-color: var(--bs-body-bg);
+    background-image: url('../img/Element.png');
+    /* Add your SVG file here */
+    background-size: cover;
+    /* Ensure it covers the whole section */
+    background-position: center center;
+    /* Center the background */
+    background-repeat: no-repeat;
+    /* Prevent repeating the background */
+    color: var(--bs-body-color);
+    padding: 50px 0 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.ctm-header-heading {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.1;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .ctm-header-heading {
+        font-size: 62px;
+    }
+}
+
+.ctm-header-sub-heading {
+    font-size: 20px;
+    line-height: 1.2;
+    opacity: 0.8;
+    color: white;
+}
+
+.ctm-header-btn {
+    color: #fff;
+    padding: 12px 30px;
+    background-color: var(--ctm-theme-color);
+    border-color: var(--ctm-theme-color);
+}
+
+.ctm-header-btn:hover {
+    color: #fff;
+    background-color: rgba(var(--ctm-theme-color-rgb), 0.9);
+    border-color: rgba(var(--ctm-theme-color-rgb), 0.9);
+}
+
+.ctm-header-svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    z-index: -1;
+    background-color: var(--ctm-svg-bg);
+    border-radius: 50px;
+}
+
+.ctm-header-img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-55%);
+}
+
+/* Try Button */
+.btn-try {
+    background-color: #4F9CF9;
+    color: white;
+    border-color: #4F9CF9;
+    display: flex;
+    align-items: center;
+}
+
+.btn-try:hover {
+    background-color: #4F9CF9;
+    border-color: #4F9CF9;
+    color: white;
+    opacity: 0.9;
+}
+
+.btn-try i {
+    margin-left: 8px;
+}
+
+
+/* Center button for small screens (below md) */
+@media (max-width: 992px) {
+    .btn-try {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
